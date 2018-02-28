@@ -6,7 +6,7 @@ body {
 	background-color: #f5e9b8;
 }
 #container {
-	width: 900px;
+	width: 1100px;
 	height: 100%;
 	position: absolute;
 	left: 50%;
@@ -14,13 +14,13 @@ body {
 }
 .font {
 	font-family: 'Neuton', serif;
-	font-size: 10em;
+	font-size: 12em;
 }
 #adopt {
 	color: #906d5c;
 	position: absolute;
-	left: -80px;
-	top: -100px;
+	left: -180px;
+	top: -140px;
     animation-name: adopt;
     -webkit-animation: adopt 10.0s forwards;
     animation-delay: 1s;
@@ -28,7 +28,7 @@ body {
 #dont {
 	color: #e07666;
 	position: absolute;
-	left: -80px;
+	left: -180px;
 	top: 30px;
     animation-name: dont;
     -webkit-animation: dont 10.0s forwards;
@@ -37,8 +37,8 @@ body {
 #shop {
 	color: #906d5c;
 	position: absolute;
-	left: -80px;
-	top: 160px;
+	left: -180px;
+	top: 200px;
     animation-name: shop;
     -webkit-animation: shop 10.0s forwards;
     animation-delay: 1s;
@@ -46,10 +46,10 @@ body {
 #dog {
 	height: auto; 
     width: auto; 
-    max-height: 750px; 
-    max-width: 750px;
+    max-height: 780px; 
+    max-width: 100%;
     top: 90px;
-    left: 220px;
+    left: 120px;
     position: absolute;
     animation-name: dog;
     -webkit-animation: dog 10.0s forwards;
@@ -58,11 +58,11 @@ body {
 #cat {
 	height: auto; 
     width: auto; 
-    max-height: 400px; 
-    max-width: 400px;
+    max-height: 520px; 
+    max-width: 530px;
     position: absolute;
     top: 350px;
-    left: 350px;
+    left: 370px;
     animation-name: cat;
     -webkit-animation: cat 10.0s forwards;
     animation-delay: 1s;
@@ -72,19 +72,19 @@ body {
     width: auto; 
     max-height: 100px; 
     max-width: 100px;
-    top: 570px;
-    left: 75px;
+    top: 650px;
+    left: 58px;
     position: absolute;
     animation: beat 1s infinite alternate;
 }
 #paw {
 	height: auto; 
     width: auto; 
-    max-height: 120px; 
-    max-width: 120px;
+    max-height: 130px; 
+    max-width: 130px;
     position: absolute;
     top: 60px;
-    left: 160px;
+    left: 115px;
     animation-name: paw;
     -webkit-animation: paw 10.0s forwards;
     animation-delay: 1s;
@@ -93,11 +93,11 @@ body {
 #paw2 {
 	height: auto; 
     width: auto; 
-    max-height: 120px; 
-    max-width: 120px;
+    max-height: 130px; 
+    max-width: 130px;
     position: absolute;
-    top: 320px;
-    left: 130px;
+    top: 400px;
+    left: 85px;
     animation-name: paws;
     -webkit-animation: paws 10.0s forwards;
     animation-delay: 1s;
@@ -108,8 +108,8 @@ body {
     width: auto; 
     max-height: 200px; 
     max-width: 200px;
-    top: 510px;
-    left: 20px;
+    top: 585px;
+    left: 5px;
     position: absolute;
     -webkit-animation:spin 10s linear infinite; /*spin animation*/
     -moz-animation:spin 10s linear infinite;
@@ -124,39 +124,39 @@ body {
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 @keyframes dog {
-    0% {left:220px;}
+    0% {left:120px;}
     25% {left:500px;}
-    100% {left:-30px; -webkit-transform: scaleX(-1);} /*makes the dog flip around*/
+    100% {left:-200px; -webkit-transform: scaleX(-1);} /*makes the dog flip around*/
 }
 @keyframes cat {
-    0% {left:350px;}
-    50% {left:-400px;}
-    100% {left:-250px;}
+    0% {left:370px;}
+    50% {left:-500px;}
+    100% {left:-360px;}
 }
 @keyframes adopt {
-    0% {top: -100px; left: -80px;} 
-    25% {top: -100px; left: 360px;}
-    100% {top: -100px; left: 360px;}
+    0% {top: -140px; left: -180px;} 
+    25% {top: -140px; left: 380px;}
+    100% {top: -140px; left: 380px;}
 }
 @keyframes dont {
-    0% {top: 30px; left: -80px;} 
-    50% {top: 30px; left: 430px;}
-    100% {top: 30px; left: 430px;}
+    0% {top: 30px; left: -180px;} 
+    50% {top: 30px; left: 460px;}
+    100% {top: 30px; left: 460px;}
 }
 @keyframes shop {
-    0% {top: 160px; left: -80px;} 
-    75% {top: 160px; left: 480px;}
-    100% {top: 160px; left: 480px;}
+    0% {top: 200px; left: -180px;} 
+    75% {top: 200px; left: 520px;}
+    100% {top: 200px; left: 520px;}
 }
 @keyframes paw {
-    0% {top: 60px; left: 160px;} 
-    25% {top: 60px; left: 600px;}
-    100% {top: 60px; left: 600px;}
+    0% {top: 60px; left: 115px;} 
+    25% {top: 60px; left: 670px;}
+    100% {top: 60px; left: 670px;}
 }
 @keyframes paws {
-    0% {top: 320px; left: 130px;} 
-    75% {top: 320px; left: 690px;}
-    100% {top: 320px; left: 690px;}
+    0% {top: 400px; left: 85px;} 
+    75% {top: 400px; left: 790px;}
+    100% {top: 400px; left: 790px;}
 }
 @keyframes beat{
     to { transform: scale(1.4); }
