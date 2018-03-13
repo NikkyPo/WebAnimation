@@ -111,12 +111,15 @@ body {
     top: 585px;
     left: 5px;
     position: absolute;
-    -webkit-animation:spin 10s linear infinite; /*spin animation*/
-    -moz-animation:spin 10s linear infinite;
-    animation:spin 15s linear infinite;
+    -webkit-animation:spin 10s linear; /*spin animation*/
+    -moz-animation:spin 10s linear;
+    animation:spin 10s linear;
     animation-delay: 1s;
 }
-
+#support:hover{
+    transform: scale(1.5, 1.5);
+    opacity: .5;
+}
 /*This is all of the animation keyframes for the above*/
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
